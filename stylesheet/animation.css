@@ -1,0 +1,31 @@
+@keyframes header {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes image{
+  0%{border-radius: 51% 49% 17% 83% / 47% 28% 72% 53%  ;}
+  25%{border-radius: 65% 35% 39% 61% / 58% 16% 84% 42% ;}
+  50%{border-radius: 26% 74% 39% 61% / 58% 73% 27% 42% ;}
+  75%{border-radius: 51% 49% 17% 83% / 47% 28% 72% 53% ;}
+  100%{border-radius: 51% 49% 17% 83% / 47% 28% 72% 53%  ;}
+}
+@keyframes bg-image{
+  0%{border-radius: 54% 46% 65% 35% / 60% 25% 75% 40%  ;}
+  25%{border-radius: 36% 64% 23% 77% / 34% 49% 51% 66%  ;}
+  50%{border-radius: 66% 34% 67% 33% / 63% 30% 70% 37%  ;}
+  75%{border-radius: 38% 62% 21% 79% / 39% 53% 47% 61%  ;}
+  100%{border-radius: 54% 46% 65% 35% / 60% 25% 75% 40%  ;}
+}

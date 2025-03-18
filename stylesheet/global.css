@@ -1,0 +1,34 @@
+:root {
+  --red: #dc143c;
+  --blue: #64ffda;
+  --darkblue: #0a192f;
+  --gray:rgba(42, 43, 56, 0.5);
+}
+@font-face {
+  font-family: 'markpro';
+  src: url('../font/MarkPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'markpro';
+  color: white;
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+body {
+  background-color: black;
+  width: 100%;
+  overflow-x: hidden;
+  /* min-height: 100vh; */
+}
