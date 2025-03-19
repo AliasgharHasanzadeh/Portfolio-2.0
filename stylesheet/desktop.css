@@ -219,7 +219,7 @@ main {
     min-height: 70%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     > div {
       margin-bottom: 20px;
