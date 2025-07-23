@@ -219,15 +219,16 @@ main {
     min-height: 70%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 10px;
     > div {
       margin-bottom: 20px;
       background-color: #1c1c1c;
-      padding: 20px;
+      padding: 15px;
       border-radius: 12px;
-      width: 400px;
-      height: 400px;
+      width: 380px;
+      height: 420px;
       transition: all 0.3s ease;
       border: 1px solid rgba(255, 255, 255, 0.1);
       position: relative;
