@@ -20,23 +20,6 @@ nav {
     backdrop-filter: blur(20px);
     border-radius: 16px;
     font-weight: 600;
-    /* > a {
-     &:nth-of-type(2){
-      >li{
-        position: relative;
-        &::before {
-          content: "01.";
-          color: var(--red);
-          font-size: 18px;
-          position: absolute;
-          left: -30px;
-          top: -1;
-        }
-      }
-     }
-     &:nth-of-type(){}
-     &:nth-of-type(){}
-    } */
   }
 }
 header {
@@ -219,7 +202,7 @@ main {
     min-height: 70%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
     > div {
