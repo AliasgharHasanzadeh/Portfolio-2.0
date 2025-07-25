@@ -16,12 +16,16 @@ links.forEach(link => {
 }); 
 // console.log(container)
 async function updateMyWork() {
-    const res = await fetch('https://myproject.majid-samurai2006.workers.dev/')
-    const data = await res.json()
-    data.forEach(item=>{
-        const newDiv = document.createElement('div')
+    try {
+      const res = await fetch('https://myproject.majid-samurai2006.workers.dev/');
+      if (!res.ok) {
+        throw new Error(`HTTP error! Status: ${res.status}`);
+      }
+      const data = await res.json();
+      data.forEach(item => {
+        const newDiv = document.createElement('div');
         newDiv.innerHTML = `
-        <img src="${item.img}">
+          <img src="${item.img}">
           <h1>${item.title}</h1>
           <p>${item.description}</p>
           <p>${item.tech}</p>
@@ -33,9 +37,13 @@ async function updateMyWork() {
               <line x1="10" y1="14" x2="21" y2="3"></line>
             </svg>
           </a>
-        `
-        container.appendChild(newDiv)
-         
-    })
-}
+        `;
+        container.appendChild(newDiv);
+      });
+      
+    } catch (error) {
+      console.error('Error fetching or processing data:', error);
+    }
+  }
+  
 updateMyWork()
